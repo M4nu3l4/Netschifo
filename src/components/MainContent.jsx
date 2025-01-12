@@ -1,4 +1,4 @@
-import  { Component } from "react";
+import { Component } from "react";
 import { Container, Row, Col, ListGroup, Image } from "react-bootstrap";
 import Recensioni from "./Recensioni"; // Importa Recensioni
 

@@ -17,7 +17,7 @@ function App() {
       <SecondNavBar/>
       <MainContent/>
       <Recensioni/>
-      <App/>
+     
     </>
   )
 }
