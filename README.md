@@ -30,7 +30,7 @@
   <p>Per avviare l'applicazione, segui questi passaggi:</p>
   <ol>
     <li><strong>Clona il repository:</strong>
-      <pre><code>git clone https://github.com/tuo-utente/movie-finder.git</code></pre>
+      <pre><code>git clone https://github.com/M4nU3l4/Netschifo.git</code></pre>
     </li>
     <li><strong>Installa le dipendenze:</strong>
       <p>Naviga nella cartella del progetto ed esegui:</p>
@@ -52,7 +52,7 @@ npm install</code></pre>
 
   <h2>📸 Screenshot</h2>
   <p>Ecco un esempio di come appare l'applicazione:</p>
-  <img src="screenshot.png" alt="Movie Finder Screenshot" style="max-width: 100%; height: auto; border-radius: 10px;">
+  <img src="public/Netschifo.png" alt=" Screenshot" style="max-width: 100%; height: auto; border-radius: 10px;">
 
   <h2>🔄 Possibili miglioramenti</h2>
   <ul>
