@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movie Finder</title>
+  
 </head>
 <body style="font-family: Arial, sans-serif; background-color: #121212; color: white; padding: 20px;">
 
-  <h1>📽️ Movie Finder</h1>
+  <h1>📽️ Netschifo</h1>
 
   <p>Un'applicazione React che permette di visualizzare informazioni sui film, tra cui titoli, locandine e durata, utilizzando l'API di OMDB (Open Movie Database). In questo caso, i film sono cercati tramite il nome "Star Wars". 🛸✨</p>
 
