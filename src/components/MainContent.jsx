@@ -1,11 +1,12 @@
-import { Component } from "react";
+import  { Component } from "react";
 import { Container, Row, Col, ListGroup, Image } from "react-bootstrap";
+import Recensioni from "./Recensioni"; // Importa Recensioni
 
 const URL = "http://www.omdbapi.com/?i=tt3896198&apikey=f15a86c1";
 
 class MainContent extends Component {
   state = {
-    video: null, // Cambiato da array a null perché ricevi un singolo oggetto
+    video: null,
   };
 
   getVideo = async () => {
@@ -15,7 +16,7 @@ class MainContent extends Component {
         throw new Error("Errore nella chiamata API");
       }
       const data = await response.json();
-      this.setState({ video: data }); // Aggiorna lo stato con l'oggetto video
+      this.setState({ video: data });
     } catch (error) {
       console.error("ERRORE:", error);
     }
@@ -40,15 +41,18 @@ class MainContent extends Component {
         <Row className="justify-content-center my-3">
           <Col xs={12} md={6}>
             {video ? (
-              <ListGroup>
-                <ListGroup.Item key={video.imdbID}>
-                  <h3>{video.Title}</h3>
-                  <Image src={video.Poster} alt={video.Title} fluid />
-                  <p>
-                    {video.Genre} | {video.Year}
-                  </p>
-                </ListGroup.Item>
-              </ListGroup>
+              <>
+                <ListGroup>
+                  <ListGroup.Item key={video.imdbID}>
+                    <h3>{video.Title}</h3>
+                    <Image src={video.Poster} alt={video.Title} fluid />
+                    <p>
+                      {video.Genre} | {video.Year}
+                    </p>
+                  </ListGroup.Item>
+                </ListGroup>
+                <Recensioni video={video} /> {/* Passa video come prop */}
+              </>
             ) : (
               <p>Caricamento in corso...</p>
             )}
@@ -60,4 +64,5 @@ class MainContent extends Component {
 }
 
 export default MainContent;
+
 
