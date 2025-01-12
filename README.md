@@ -34,13 +34,13 @@
     </li>
     <li><strong>Installa le dipendenze:</strong>
       <p>Naviga nella cartella del progetto ed esegui:</p>
-      <pre><code>cd movie-finder
+      <pre><code>cd Netschifo
 npm install</code></pre>
     </li>
     <li><strong>Avvia l'applicazione:</strong>
       <p>Esegui il comando seguente per avviare il server di sviluppo:</p>
       <pre><code>npm start</code></pre>
-      <p>L'app sarà disponibile su <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> nel tuo browser.</p>
+      <p>L'app sarà disponibile su <a href="http://localhost:5173" target="_blank">http://localhost:5173</a> nel tuo browser.</p>
     </li>
   </ol>
 
@@ -63,6 +63,11 @@ npm install</code></pre>
 
   <h2>💬 Contributi</h2>
   <p>Se desideri contribuire a questo progetto, fai un fork del repository, crea una nuova branch per le tue modifiche e invia una pull request!</p>
+
+  <h2>🧑‍💻<strong>Autore</strong></h2>
+  <p>Manuela Lissia</p>
+  <br>
+  <hr>
 
   <footer>
     <p>🚀 Buona visione dei film! 🍿</p>
