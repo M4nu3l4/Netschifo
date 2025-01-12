@@ -1,27 +1,32 @@
 import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
 
+import Image from 'react-bootstrap/Image';
 
-function MyLogin(){
-    return(
-        <InputGroup className="mb-3">
-        <Form.Control aria-label="Text input with dropdown button" />
+function MyLogin() {
+  return (
+    <Dropdown align="end">
+      <Dropdown.Toggle
+        variant="outline-dark"
+        id="dropdown-avatar"
+        className="d-flex align-items-center m-2"
+      >
+        <Image
+          src="/avatar.png"
+          alt="User Avatar"
+          roundedCircle
+          style={{ width: '35px', height: '35px', objectFit: 'cover' }}
+        />
+      </Dropdown.Toggle>
 
-        <DropdownButton src ="../../public/./avatar.png" className="rounded"
-          variant="outline-secondary"
-          title="Dropdown"
-          id="input-group-dropdown-2"
-          align="end"
-        >
-          <Dropdown.Item href="#">Account</Dropdown.Item>
-          <Dropdown.Item href="#">Saves</Dropdown.Item>
-          <Dropdown.Item href="#">Recently viewed</Dropdown.Item>
-          <Dropdown.Divider />
-          <Dropdown.Item href="#">Logout</Dropdown.Item>
-        </DropdownButton>
-      </InputGroup>
-    )
+      <Dropdown.Menu>
+        <Dropdown.Item href="#">Account</Dropdown.Item>
+        <Dropdown.Item href="#">Saves</Dropdown.Item>
+        <Dropdown.Item href="#">Recently viewed</Dropdown.Item>
+        <Dropdown.Divider />
+        <Dropdown.Item href="#">Logout</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+  );
 }
-export default MyLogin
+
+export default MyLogin;

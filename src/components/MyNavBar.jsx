@@ -12,53 +12,55 @@ class MyNavBar extends Component {
   render() {
     return (
       <>
-        {[false, "sm", "md", "lg", "xl", "xxl"].map((expand) => (
+      
           <Navbar
-            key={expand}
-            expand={expand}
-            className="bg-body-tertiary mb-3"
+            key="lg"
+            expand ="lg"
+            className="bg-dark"
           >
             <Container fluid>
               <Navbar.Brand href="#">
-                <Image src="../../public/./netflix_logo.png" />
+                <Image src="../../public/./netflix_logo.png" style={{width : "7rem"}}/>
               </Navbar.Brand>
               <Navbar.Toggle
-                aria-controls={`offcanvasNavbar-expand-${expand}`}
+                aria-controls={`offcanvasNavbar-expand-lg`}
               />
               <Navbar.Offcanvas
-                id={`offcanvasNavbar-expand-${expand}`}
-                aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+                id={`offcanvasNavbar-expand-lg`}
+                aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
                 placement="end"
               >
                 <Offcanvas.Header closeButton>
-                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
                     Offcanvas
                   </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                  <Nav className="justify-content-end flex-grow-1 pe-3">
-                    <Nav.Link href="#action1">Home</Nav.Link>
-                    <Nav.Link href="#action2">TV Shows</Nav.Link>
-                    <Nav.Link href="#action2">Movies</Nav.Link>
-                    <Nav.Link href="#action2">Recently Added</Nav.Link>
-                    <Nav.Link href="#action2">My LIst</Nav.Link>
+                  <Nav className="justify-content-end flex-grow-1 p-2 ">
+                    <Nav.Link className="text-white"   href="#action1">Home</Nav.Link>
+                    <Nav.Link  className= "text-white"  href="#action2">TV Shows</Nav.Link>
+                    <Nav.Link className= "text-white"  href="#action2">Movies</Nav.Link>
+                    <Nav.Link className= "text-white"  href="#action2">Recently Added</Nav.Link>
+                    <Nav.Link  className= "text-white"  href="#action2">My LIst</Nav.Link>
                   
                   </Nav>
                   <Form className="d-flex">
                     <Form.Control
                       type="search"
-                      placeholder="Search"
-                      className="me-2"
+                      placeholder=""
+                      className="w-50 m-1"
                       aria-label="Search"
                     />
-                    <Button variant="outline-success">Search</Button>
+                      <Button variant="outline-dark"
+                      className="me-2 w-15 rounded-2 text-white">Search</Button>
+                    <MyLogin/>
                   </Form>
                 </Offcanvas.Body>
-                {MyLogin}
+               
               </Navbar.Offcanvas>
             </Container>
           </Navbar>
-        ))}
+        
       </>
     );
   }
