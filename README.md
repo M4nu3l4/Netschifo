@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movie Finder</title>
+  
 </head>
 <body style="font-family: Arial, sans-serif; background-color: #121212; color: white; padding: 20px;">
 
-  <h1>📽️ Movie Finder</h1>
+  <h1>📽️ Netschifo</h1>
 
   <p>Un'applicazione React che permette di visualizzare informazioni sui film, tra cui titoli, locandine e durata, utilizzando l'API di OMDB (Open Movie Database). In questo caso, i film sono cercati tramite il nome "Star Wars". 🛸✨</p>
 
@@ -30,17 +30,17 @@
   <p>Per avviare l'applicazione, segui questi passaggi:</p>
   <ol>
     <li><strong>Clona il repository:</strong>
-      <pre><code>git clone https://github.com/tuo-utente/movie-finder.git</code></pre>
+      <pre><code>git clone https://github.com/M4nU3l4/Netschifo.git</code></pre>
     </li>
     <li><strong>Installa le dipendenze:</strong>
       <p>Naviga nella cartella del progetto ed esegui:</p>
-      <pre><code>cd movie-finder
+      <pre><code>cd Netschifo
 npm install</code></pre>
     </li>
     <li><strong>Avvia l'applicazione:</strong>
       <p>Esegui il comando seguente per avviare il server di sviluppo:</p>
       <pre><code>npm start</code></pre>
-      <p>L'app sarà disponibile su <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> nel tuo browser.</p>
+      <p>L'app sarà disponibile su <a href="http://localhost:5173" target="_blank">http://localhost:5173</a> nel tuo browser.</p>
     </li>
   </ol>
 
@@ -52,7 +52,7 @@ npm install</code></pre>
 
   <h2>📸 Screenshot</h2>
   <p>Ecco un esempio di come appare l'applicazione:</p>
-  <img src="screenshot.png" alt="Movie Finder Screenshot" style="max-width: 100%; height: auto; border-radius: 10px;">
+  <img src="public/Netschifo.png" alt=" Screenshot" style="max-width: 100%; height: auto; border-radius: 10px;">
 
   <h2>🔄 Possibili miglioramenti</h2>
   <ul>
@@ -63,6 +63,11 @@ npm install</code></pre>
 
   <h2>💬 Contributi</h2>
   <p>Se desideri contribuire a questo progetto, fai un fork del repository, crea una nuova branch per le tue modifiche e invia una pull request!</p>
+
+  <h2>🧑‍💻<strong>Autore</strong></h2>
+  <p>Manuela Lissia</p>
+  <br>
+  <hr>
 
   <footer>
     <p>🚀 Buona visione dei film! 🍿</p>
