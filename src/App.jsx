@@ -6,6 +6,7 @@ import SecondNavBar from './components/SecondNavBar'
 import MainContent from './components/MainContent'
 import Recensioni from './components/MainContent'
 import Loading from './components/Loading'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <SecondNavBar/>
       <MainContent/>
       <Recensioni/>
+      <Footer/>
      
     </>
   )
