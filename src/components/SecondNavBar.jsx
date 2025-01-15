@@ -42,9 +42,9 @@ function SecondNavBar() {
         </Container>
       </Navbar>
       <Offcanvas show={showGenres} onHide={handleCloseGenres} placement="end" className=" bg-dark text-white ">
-        <Offcanvas.Header closeButton>
+        <Offcanvas.Header closeButton >
           <Offcanvas.Title >Movie Genres</Offcanvas.Title>
-        </Offcanvas.Header>
+        </Offcanvas.Header  >
         <Offcanvas.Body className=" bg-dark">
           <Nav className="flex-column">
             <Nav.Link href="#action">Action</Nav.Link>

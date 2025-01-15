@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+.nav-link{
+  color: #888 !important;
+}
+.nav-link:hover{
+  color:whitesmoke !important;
+}
