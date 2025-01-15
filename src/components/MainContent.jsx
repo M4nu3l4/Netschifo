@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { Container, Row, Col, ListGroup, Image, Spinner } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const SEARCH_URL = "https://www.omdbapi.com/?apikey=f15a86c1&s=Star%20Wars";
 const DETAILS_URL = "https://www.omdbapi.com/?apikey=f15a86c1&i=";
@@ -64,12 +65,14 @@ class MainContent extends Component {
                   <ListGroup>
                     <ListGroup.Item className="bg-dark text-white">
                       <h5 className="text-center">{video.Title}</h5>
-                      <Image
-                        src={video.Poster}
-                        alt={video.Title}
-                        fluid
-                        style={{ height: "300px", objectFit: "cover" }}
-                      />
+                      <Link to={`/movie-details/${video.imdbID}`}>
+                        <Image
+                          src={video.Poster}
+                          alt={video.Title}
+                          fluid
+                          style={{ height: "300px", objectFit: "cover" }}
+                        />
+                      </Link>
                       <p className="text-center">
                         {video.Year} | {video.Runtime || "N/A"}
                       </p>
@@ -86,8 +89,3 @@ class MainContent extends Component {
 }
 
 export default MainContent;
-
-
-
-
-

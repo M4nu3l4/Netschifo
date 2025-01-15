@@ -10,9 +10,9 @@ function SecondNavBar() {
 
   return (
     <>
-      <Navbar bg="dark" expand="lg" className="text-white">
+      <Navbar bg="black" expand="lg" className="text-white">
         <Container>
-          <Navbar.Brand href="#"  className=" text-white">TV Shows</Navbar.Brand>
+          <Navbar.Brand href="#"  className=" text-white"></Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar" />
           <Navbar.Offcanvas
             id="offcanvasNavbar"
@@ -41,11 +41,11 @@ function SecondNavBar() {
           </Button>
         </Container>
       </Navbar>
-      <Offcanvas show={showGenres} onHide={handleCloseGenres} placement="end">
+      <Offcanvas show={showGenres} onHide={handleCloseGenres} placement="end" className=" bg-dark text-white ">
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Movie Genres</Offcanvas.Title>
+          <Offcanvas.Title >Movie Genres</Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body>
+        <Offcanvas.Body className=" bg-dark">
           <Nav className="flex-column">
             <Nav.Link href="#action">Action</Nav.Link>
             <Nav.Link href="#horror">Horror</Nav.Link>
