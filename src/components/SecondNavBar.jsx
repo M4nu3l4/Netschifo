@@ -34,7 +34,7 @@ function SecondNavBar() {
           </Navbar.Offcanvas>
           <Button
             variant="outline-light"
-            className="ms-3 "
+            className="ms-3 btn-outline-light"
             onClick={handleShowGenres}
           >
             Genres
@@ -45,7 +45,7 @@ function SecondNavBar() {
         <Offcanvas.Header closeButton >
           <Offcanvas.Title >Movie Genres</Offcanvas.Title>
         </Offcanvas.Header  >
-        <Offcanvas.Body className=" bg-dark">
+        <Offcanvas.Body className=" bs-dark">
           <Nav className="flex-column">
             <Nav.Link href="#action">Action</Nav.Link>
             <Nav.Link href="#horror">Horror</Nav.Link>

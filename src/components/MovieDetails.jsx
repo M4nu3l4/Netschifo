@@ -22,7 +22,7 @@ function MovieDetails() {
         const detailData = await detailResponse.json();
         setDetails(detailData);
 
-        const commentsResponse = await fetch(`https://www.omdbapi.com/?apikey=f15a86c1&i=${movieId}`);
+        const commentsResponse = await fetch(`https://www.omdbapi.com/?apikey=f15a86c1&i=${movieId}/comments`);
         if (!commentsResponse.ok) {
           throw new Error("Errore durante il recupero dei commenti.");
         }
@@ -51,8 +51,8 @@ function MovieDetails() {
       ) : (
         <>
           {details && (
-            <Row className="bg-dark p-3">
-              <Col xs ={12} md={6}>
+            <Row className="bg-dark p-3 justify-content-center">
+              <Col xs ={12}>
                 <h1>{details.Title}</h1>
                 <img
                   src={details.Poster}
